@@ -29,24 +29,43 @@
         private void InitializeComponent()
         {
             button1 = new Button();
+            button2 = new Button();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(149, 138);
+            button1.BackColor = Color.FromArgb(255, 192, 192);
+            button1.Font = new Font("Symbol", 50F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.ForeColor = Color.Gray;
+            button1.Location = new Point(21, 12);
             button1.Name = "button1";
-            button1.Size = new Size(10, 357);
+            button1.Size = new Size(803, 476);
             button1.TabIndex = 0;
             button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            button1.TextAlign = ContentAlignment.MiddleRight;
+            button1.TextImageRelation = TextImageRelation.ImageAboveText;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(160, 499);
+            button2.Name = "button2";
+            button2.Size = new Size(571, 23);
+            button2.TabIndex = 1;
+            button2.Text = "button2";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(7F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            BackColor = Color.FromArgb(192, 255, 192);
+            ClientSize = new Size(875, 534);
+            Controls.Add(button2);
             Controls.Add(button1);
+            Font = new Font("Yu Gothic UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
@@ -56,5 +75,6 @@
         #endregion
 
         private Button button1;
+        private Button button2;
     }
 }
